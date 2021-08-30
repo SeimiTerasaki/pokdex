@@ -1,0 +1,43 @@
+{
+  "name": "Seimi's Awesome Pokedex",
+  "short_name": "Pokedex",
+  "scope": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#374151",
+  "orientation": "portrait-primary",
+  "splash_pages": null,
+  "icons": [
+    {
+      "src": "./favicons/iconx64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "./favicons/iconx96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "./favicons/iconx72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/favicons/iconx128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/favicons/iconx256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/favicons/iconx512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

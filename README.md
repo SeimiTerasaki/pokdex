@@ -2,7 +2,7 @@
 
 NextJS app that uses PokeAPI to display a pokedex.
 
-[Seimi's Awesome Pokedex](https://pokedex-pi-peach.vercel.app/)
+[Seimi's Awesome Pokedex](https://pokedex-seimiterasaki.vercel.app/)
 
 ## Install
 

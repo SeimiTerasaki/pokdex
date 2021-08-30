@@ -16,7 +16,7 @@ export default function IdNumber({ number }: IdProps) {
     } else {
       setId("#0" + number);
     }
-  });
+  }, []);
 
   return id;
 }

@@ -5,7 +5,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "server": "npm run build && NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@fontsource/lato": "^4.5.0",
@@ -15,6 +16,7 @@
     "framer-motion": "^4.1.17",
     "gsap": "^3.7.1",
     "next": "11.0.1",
+    "next-pwa": "^5.3.1",
     "react": "^17.0.2",
     "react-chartjs-2": "^3.0.4",
     "react-dom": "^17.0.2",
