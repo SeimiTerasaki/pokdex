@@ -42,7 +42,7 @@ export default function Pokedex({ pokemons }: PokedexProps) {
 
 export const getStaticProps: GetStaticProps<PokedexProps> = async (context) => {
   try {
-    const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151");
+    const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=248");
     const { results } = await res.json();
     return {
       props: { pokemons: results },
