@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Pokemon-hollow";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/Pokemon-Solid.woff") format("woff");
+}
+
+h3 {
+  font-family: "Pokemon-hollow";
+  font-size: 45px;
+  color: #ffcb05;
+  text-shadow: -3px 3px 0 #003a70, 3px 3px 0 #003a70, 3px -3px 0 #003a70,
+    -3px -3px 0 #003a70;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #2a75bb;
+}
+
+.font-Lustria {
+  font-family: "Lustria";
+}
+.font-Lato {
+  font-family: "Lato";
+}
+.right-50 {
+  right: -50%;
+}
+
+.left-50 {
+  left: -50%;
+  top: -4rem;
+}
+
+.w-300 {
+  width: 20rem;
+}
+
+.react-tabs__tab {
+  font-family: "Lato";
+  background-color: #fff;
+  color: black;
+  border-radius: 5px 5px 0 0;
+  border: 0.5px solid #aaa;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+  padding: 1.5rem;
+}
+
+.react-tabs__tab-list {
+  margin-bottom: 0px !important;
+  border-bottom: 0px !important;
+}
+
+.tabs {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  margin-top: 15vh;
+}
+
+img {
+  width: 300px;
+}
+
+.tab-buttons {
+  margin-bottom: 50px;
+}
+
+button {
+  margin-right: 15px;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: initial;
+  transition: all ease-in-out 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.active {
+  border: none;
+}
+
+.image-container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 650px) {
+  .w-300 {
+    width: 280px !important;
+  }
+  .right-50 {
+    right: 0%;
+  }
+  .left-50 {
+    left: 0%;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  .h-xs {
+    display: block !important;
+  }
+}
