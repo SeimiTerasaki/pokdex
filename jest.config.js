@@ -1,4 +1,5 @@
 module.exports = {
+  roots: ["<rootDir>"],
     collectCoverageFrom: [
       '**/*.{js,jsx,ts,tsx}',
       '!**/*.d.ts',
@@ -6,8 +7,8 @@ module.exports = {
     ],
     moduleNameMapper: {
       '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
-      '^.+\\.(css|sass|scss)$': '<rootDir>/__mocks__/styleMock.js',
-      '^.+\\.(jpg|jpeg|png|gif|webp|svg)$': `<rootDir>/__mocks__/fileMock.js`,
+      '^.+\\.(css|sass|scss)$': '<rootDir>/mocks/styleMock.js',
+      '^.+\\.(jpg|jpeg|png|gif|webp|svg)$': `<rootDir>/mocks/fileMock.js`,
       '^@/components/(.*)$': '<rootDir>/components/$1',
       '^@/components/tabs/(.*)$': '<rootDir>/components/tabs/$1',
       '^@/lib/(.*)$': '<rootDir>/lib/$1',
@@ -30,6 +31,6 @@ module.exports = {
       "@testing-library/react/dont-cleanup-after-each",
       "@testing-library/jest-dom/extend-expect"
     ],
-    testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    testRegex: "(/tests/.*|(\\.|/)(test|spec))\\.tsx?$",
     moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"]
   }

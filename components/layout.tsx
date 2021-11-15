@@ -10,7 +10,7 @@ interface LayoutProps {
 export default function Layout({ children, title }: LayoutProps) {
   const Title = capitalize(title);
   return (
-    <div className="sm:px-20 md:px-24 lg:px-56 antialiased font-sans p-6 bg-gradient-to-r from-gray-700 via-gray-900 to-black min-h-screen">
+    <div>
       <Head>
         <title className="capitalize">{Title}</title>
         <meta
@@ -43,17 +43,16 @@ export default function Layout({ children, title }: LayoutProps) {
         <meta name="theme-color" content="#fff" />
         <meta name="apple-mobile-web-app-status-bar" content="#fff" />
       </Head>
-
-      <main>
-        <div className="text-center pb-5">
+        <div className="text-center z-10 w-full fixed pt-8 pb-6 mx-auto bg-gradient-to-r from-gray-700 via-gray-900 to-black">
           <Link href="/">
             <a>
-              <h3 className="Pokemon-hollow animate-fade-in">
+              <h3 className="Pokemon-hollow animate-fade-in text-4xl sm:text-5xl">
                 Seimi&#39;s Awesome Pokedex
               </h3>
             </a>
           </Link>
         </div>
+      <main className="sm:px-20 md:px-24 lg:px-32 antialiased font-sans p-6 bg-gradient-to-r from-gray-700 via-gray-900 to-black min-h-screen">
         {children}
       </main>
     </div>

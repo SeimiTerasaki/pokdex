@@ -31,14 +31,13 @@ export const getEvoChain = (data: EvolutionData) => {
   return evoChain;
 };
 
-export const getIdNumber = (id: string): string => {
-  const pokeId = parseInt(id);
+export const getIdNumber = (pokeId: number): string => {
   if (pokeId < 10) {
-    return "00" + pokeId.toString();
+    return `00${pokeId}`;
   } else if (pokeId > 99) {
-    return pokeId.toString();
+    return `${pokeId}`;
   } else {
-    return "0" + pokeId.toString();
+    return `0${pokeId}`;
   }
 };
 

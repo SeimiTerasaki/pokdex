@@ -20,6 +20,7 @@ const EvolutionsTab = ({ evolution }: EvolutionsProps) => {
             >
               <Link href={`/pokedex/${chain.species_name}`}>
                 <a
+                  data-cy="evo-nav"
                   href="#"
                   className="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden text-black"
                 >

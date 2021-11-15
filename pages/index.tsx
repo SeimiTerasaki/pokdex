@@ -14,7 +14,7 @@ export default function Index() {
         variants={{
           enter: { transition: { staggerChildren: 0.1 } },
         }}
-        className="w-full pt-6"
+        className="w-full pt-20"
       >
         <motion.div
           variants={cardVariants}
@@ -61,7 +61,9 @@ export default function Index() {
           className="relative text-center mt-80 w-full z-50"
         >
           <Link href="/pokedex">
-            <a className="font-Lustria font-seimibold text-2xl bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded items-center">
+            <a
+              data-cy="pokedex-nav"
+              className="font-Lustria font-seimibold text-2xl bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded items-center">
               Click to Start
             </a>
           </Link>

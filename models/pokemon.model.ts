@@ -10,7 +10,7 @@ export interface PokemonIndexProps {
 }
 
 export interface PokemonDataProps {
-  id: string;
+  id: number;
   name: string;
   base_experience: string;
   height: string;

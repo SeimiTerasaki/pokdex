@@ -38,15 +38,15 @@ export default function Pokemon({ pokemon, evolution }: PokemonProps) {
         initial="initial"
         animate="enter"
         exit="exit"
-        className="container mx-auto text-white"
+        className="container mx-auto text-white mt-20"
       >
         <motion.div
           variants={returnVariants}
-          className="flex items-center md:pb-4 xl:pb-16"
+          className="flex items-center pt-12 md:pb-4 xl:pb-16"
         >
           <Link href="/pokedex">
             <a>
-              <p className="cursor-pointer">
+              <p className="cursor-pointer z-50">
                 <span className="inline-block align-middle font-Lato">
                   <FiChevronLeft />
                 </span>{" "}
@@ -56,10 +56,10 @@ export default function Pokemon({ pokemon, evolution }: PokemonProps) {
           </Link>
         </motion.div>
 
-        <div className="my-4 grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div className="my-4 grid grid-cols-1 lg:grid-cols-5 gap-4">
           <motion.div
             variants={imageVariants}
-            className={`relative border border-solid rounded-2xl pb-6 px-4 ${getBorderVariant(
+            className={`col-span-1 col-span-2 relative border border-solid rounded-2xl pb-6 px-4 ${getBorderVariant(
               pokemon.types[0].type.name
             )}`}
           >
@@ -82,7 +82,7 @@ export default function Pokemon({ pokemon, evolution }: PokemonProps) {
               )}`}
             />
             <p className="text-xl mt-2 mb-3 capitalize font-bold text-center font-Lato">
-              Base Experience: {pokemon.base_experience}{" "}
+              Base Experience: {pokemon.base_experience}
             </p>
             <ul className="flex gap-x-4 justify-center">
               {pokemon.types.map((type) => (
@@ -94,7 +94,7 @@ export default function Pokemon({ pokemon, evolution }: PokemonProps) {
           </motion.div>
           <motion.div
             variants={tabVariants}
-            className="col-span-1 lg:col-span-2 z-50 font-Lato"
+            className="col-span-1 lg:col-span-3 z-50 font-Lato"
           >
             <Tabs
               selectedTabClassName={`react-tabs__tab--selected ${getBackgroundVariant(
